@@ -21,7 +21,7 @@ pub struct LeptValue {
     t:LeptType,
 }
 
-pub struct LeptJson;
+pub struct LeptJson{}
 
 
 impl LeptJson{
@@ -30,8 +30,8 @@ impl LeptJson{
     }
  
  
-    fn lept_get_type(v: *LeptValue) -> LeptType {
-        return (*v).t;
+    fn lept_get_type(v:  LeptValue) -> LeptType {
+        return v.t;
     }
 }
 
